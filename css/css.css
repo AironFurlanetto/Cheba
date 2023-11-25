@@ -1,0 +1,29 @@
+header{
+    color: white;
+    background-color: #3300CC;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    margin: 0px;
+}
+header>img{
+    padding: 15px;
+    width: 500px;
+}
