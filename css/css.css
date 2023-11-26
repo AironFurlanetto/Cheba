@@ -1,51 +1,90 @@
 header{
-    color: white;
+    color: black;
     background-color: #3300CC;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-ul{
 
+/* header>p{
+    background-color: yellow;
+    padding: 10px;
+    margin: 0;
+} */
+
+#inicial{
+    /* display: none; */
+}
+
+header>#servicos{
+    width: 100%;
+}
+
+header>#logo{
+    padding: 10px;
+    width: 350px;
+}
+
+ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: black;
 }
+
 li{
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
 }
+
 a{
     color: white;
     text-decoration: none;
 }
+
 p{
-    margin-left: 75px;
-    margin-right: 75px;
+    text-align: justify;
 }
-h2{
-    text-align: center;
+
+section{
+    margin-left: 5%;
+    margin-right: 5%;
 }
-article>img{
+
+article{
+    display: flex;
     align-items: center;
-    width: 700px;
+    flex-direction: column;
+    flex: 300px;
+}
+
+article>img{
+    width: 90%;
     height: auto;
 }
+
 body{
-    margin: 0px;
+    margin: 0;
 }
+
 footer{
     display: flex;
+    justify-content: space-between;
     background-color: #3300CC;
-    color: white;
+    color: white;    
 }
+
 footer>img{
-    padding: 5px;
-    width: 350px;
+    padding: 10px;
+    width: 250px;
+    height: auto;
 }
-header>img{
-    padding: 5px;
-    width: 350px;
+
+footer>p{
+    display: flex;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
 }
