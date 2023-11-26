@@ -2,10 +2,11 @@ header{
     color: white;
     background-color: #3300CC;
     display: flex;
-    align-items: center ;
+    align-items: center;
     flex-direction: column;
 }
 ul{
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,10 +21,31 @@ a{
     color: white;
     text-decoration: none;
 }
+p{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+h2{
+    text-align: center;
+}
+article>img{
+    align-items: center;
+    width: 700px;
+    height: auto;
+}
 body{
     margin: 0px;
 }
+footer{
+    display: flex;
+    background-color: #3300CC;
+    color: white;
+}
+footer>img{
+    padding: 5px;
+    width: 350px;
+}
 header>img{
-    padding: 15px;
-    width: 500px;
+    padding: 5px;
+    width: 350px;
 }
