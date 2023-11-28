@@ -5,7 +5,7 @@ header {
     flex-direction: column;
 }
 
-header a {
+header a{
     color: white;
     padding: 10px;
     margin: 0;
@@ -15,7 +15,7 @@ header a {
     /* display: none; */
 }
 
-header #servicos {
+header>#servicos {
     width: 100%;
 }
 
@@ -24,17 +24,17 @@ header>#logo {
     width: 350px;
 }
 
-header>ul {
+nav>ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 10px;
+}
+
+#nav{
     background-color: black;
     color: white;
     margin: 0px;
-}
-
-header>ul>li>a {
-    color: white;
 }
 
 li {
@@ -43,12 +43,12 @@ li {
     padding: 0 15px;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+h2{
+    text-align: center;
 }
 
 p {
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -57,25 +57,31 @@ section {
     margin-right: 5%;
 }
 
-article {
+a{
     display: flex;
     align-items: center;
     flex-direction: column;
     flex: 300px;
+    color: white;
+    text-decoration: none;
 }
 
-article img {
+#inicial{
+    align-items: center;
+}
+
+article>img {
     width: 90%;
     height: auto;
 }
 
-li a {
+li a{
     display: flex;
     color: black;
     text-align: center;
 }
 
-a img {
+a>img {
     width: 25px;
 }
 
@@ -90,13 +96,14 @@ footer {
     color: white;
 }
 
-footer img {
+footer>img{
     padding: 10px;
     width: 250px;
     height: auto;
 }
 
-footer p {
+footer>p{
+    font-size: 17px;
     display: flex;
     text-align: left;
     margin-left: 10px;
