@@ -14,13 +14,13 @@
 
 <body>
     <header>
-        <img src="img/servicos.jpg" alt="serviços" id="servicos">
+        <img src="img/servicos.jpg" alt="serviços" id="servicosimg">
         <img src="img/logocheba1.png" alt="logo" id="logo">
         <nav>
             <ul>
-                <li><a href="#" id="nav" onclick="showcontent(inicial)">PAGINA INICIAL</a></li>
-                <li><a href="#" id="nav" onclick="showcontent(servicos)">SERVIÇOS</a></li>
-                <li><a href="#" id="nav" onclick="showcontent(contato)">CONTATO</a></li>
+                <li><a href="#inicial" id="nav" onclick="display:block">PAGINA INICIAL</a></li>
+                <li><a href="#servicos" id="nav" onclick="display:block">SERVIÇOS</a></li>
+                <li><a href="#contato" id="nav" onclick="display:block">CONTATO</a></li>
             </ul>
         </nav>
     </header>
@@ -37,16 +37,29 @@
             </article>
             <article id="servicos" class="conteudo">
                 <h2>SERVIÇOS</h2>
+                <!--radio buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons-->
                 <p>A boa recepção e a comodidade de nossos cliente e amigos é fator primordial para nós da Cheba-Car. Nosso perfeccionismo garante o trabalho que realizamos para nossos amigos clientes. Disponibilizamos de dois gabinetes de pintura com alta
                     tecnologia, precisando nossos serviços. Funilaria tecnicamente e tecnologicamente preparada com a aprovação e satisfação do cliente pelos trabalhos realizados nos seus veículos. conhecemos o que fazemos, sendo assim garantimos nossos
                     serviços.Trabalhamos com Geometria e balanceamento de rodas para carros e caminhonetes, tudo com profissionais e equipamentos especializados, com foco na qualidade dos serviços prestados. Atendemos carros segurados e particulares,
                     aqui você pode contar com o melhor em serviços de Mecânica, Elétrica, Polimento, Injeção Eletrônica, Funilaria, Pintura, Baterias. Você também encontra Peças e Acessórios e o melhor serviço de Guincho e Socrro 24h da cidade.</p>
             </article>
+            <article id="carrossel">
+                <img class="slide" src="img/Serviços-manutencao.png" alt="imagem-1">
+                <img class="slide" src="img/Serviços-manutencao2.png" alt="imagem-2">
+                <img class="slide" src="img/Serviços-manutencao3.png" alt="imagem-3">
+                <img class="slide" src="img/Serviços-reboque.png" alt="imagem-4">
+            </article>
+            
             <article id="contato" class="conteudo">
                 <H2>CONTATO</H2>
                 <ul>
                     <li>
-                        <a id="teste    " href="https://instagram.com/cheba.car?igshid=MmVlMjlkMTBhMg==" target="_self"><img src="img/icone_instagram.png"> @Cheba-Car - Instagram</a>
+                        <a href="https://instagram.com/cheba.car?igshid=MmVlMjlkMTBhMg==" target="_self"><img src="img/icone_instagram.png"> @Cheba-Car - Instagram</a>
                         <a href="https://wa.me/5548999041105" target="_self"><img src="img/icone-whatsapp.png"> +55 (48) 9 99041105</a>
                         <a href="https://www.facebook.com/CAchebacar/?locale=pt_BR" target="_self"><img src="img/icone_facebook.png"> Cheba Car - Facebook</a>
                         <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRsqHMfnngVvpTnsbJkdGkrfMJlNGbxSTxDFGtLwNblHVRdZPfsPtZqNCfcbkDNQxxRjfqV"><img src="img/icone_gmail.png" alt=""> chebacar@terra.com.br</a>
@@ -62,6 +75,7 @@
         <p> Socorro 24h: (48)9984-9993 (48)3462-0700.</p>
         <p> Fone: (48) 9984-9993 (48) 3462-0700.</p>
     </footer>
+    <script src="javascript/javascript.js"></script>
 </body>
 
 </html>

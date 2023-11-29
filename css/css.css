@@ -1,58 +1,84 @@
-header {
+header{ /*altera a parte visual da parte superior do site,cor de fundo, direção do flex, itens no centro, em coluna*/
     background-color: #3300CC;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-header a{
+header a{ /*altera a cor das letras da area de navegação do header, preenchimento,margem*/
     color: white;
     padding: 10px;
     margin: 0;
 }
 
-#inicial {
-    /* display: none; */
-}
-
-header>#servicos {
+header>#servicosimg{ /* tamanho de imagem da imagem ao topo do header */
     width: 100%;
 }
 
-header>#logo {
-    padding: 10px;
-    width: 350px;
+header>#logo{ /* define o preenchimento da imagem e seu tamanho */
+    padding: 15px;
+    width: 400px;
 }
 
-nav>ul{
+nav>ul{ /* muda a direção do nav para linha e adiciona um espaçamento entre os itens */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 10px;
 }
 
-#nav{
+#nav{ /* troca o fundo da nav para preto, retira sua margem, define a cor das letras para branco e altera a curvatura da borda da nav*/
     background-color: black;
     color: white;
     margin: 0px;
+    border-radius: 5px;
 }
 
-li {
+#nav:hover{ /* troca a cor das letras e do fundo ao passar o mouse sobre o nav */
+    background-color: white;
+    color: black;
+}
+
+/* article{
+    display: none;
+} */
+
+#inicial:target{
+    display: block;
+}
+
+#servicos:target{
+    display: block;
+}
+
+#contato:target{
+    
+}
+
+#contato{
+    display: block;
+}
+
+li{
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
 }
 
-h2{
+body{
+    margin: 0;
+}
+
+h2{   /* centraliza o texto*/
     text-align: center;
 }
 
-p {
+p{  /* altera o tamanho da fonte */
     font-size: 20px;
     text-align: justify;
 }
 
-section {
+section{  /* margem do section  */
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -70,7 +96,7 @@ a{
     align-items: center;
 }
 
-article>img {
+article>img { /*  */
     width: 90%;
     height: auto;
 }
@@ -81,22 +107,18 @@ li a{
     text-align: center;
 }
 
-a>img {
+a>img{ /* altera o tamanho da imagem que está nos contatos */
     width: 25px;
 }
 
-body {
-    margin: 0;
-}
-
-footer {
+footer{  /*permite que os elementos sejam organizados automaticamente acordo com o tamanho da tela  */
     display: flex;
     justify-content: space-between;
     background-color: #3300CC;
     color: white;
 }
 
-footer>img{
+footer>img{ /* altera o preenchimento(distancia até a borda),tamanho,altura */
     padding: 10px;
     width: 250px;
     height: auto;
@@ -105,8 +127,36 @@ footer>img{
 footer>p{
     font-size: 17px;
     display: flex;
-    text-align: left;
+    text-align: start;
     margin-left: 10px;
     margin-right: 10px;
     align-items: center;
 }
+
+@media (max-width:768px) {
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+        
+
+    }
+    a{
+        font-size: 60px;
+    }
+    
+    
+    footer{
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 10px
+        ;
+        
+    }
+    footer>img{
+        display: none;
+        
+    }
+    
+    
+}
+
