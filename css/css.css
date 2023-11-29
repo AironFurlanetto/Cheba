@@ -133,37 +133,61 @@ footer>p{
     align-items: center;
 }
 
-@media (max-width:768px) {
+@media (max-width:1023px){ /* tamanho para tablet */
     header>#logo{ /* define o preenchimento da imagem e seu tamanho */
-        width: 300px;
+        width: 450px;
     }
+    
     #nav{
-         width: 95x;
-        font-size: 13px;
+        width: 95px;
+        font-size: 18px;
         text-align: center;
-        border-radius: 5px;   
+          
     }
+
     a{
         flex-direction: row;
-        font-size: 14px;
+        font-size: 15px;
         justify-content: space-evenly;
         text-align: center;
-        
     }
-    #contato{
-        padding: 0%;
+
+    #contato>ul{
+        padding: 0;
     }
     
     footer{
         display: flex;
         flex-wrap: nowrap;
         font-size: 10px;
-        
-        
+        padding: 0 2%;
     }
-    footer>img{
+
+    footer>img{ /* Tira a imagem do footer */
         display: none;
-        
+    }
+}
+
+@media (max-width: 670px){ /* tamanho para celular */
+    #servicosimg{
+        display: none;
     }
     
+    #nav{
+        font-size: 20px;
+    }
+
+    header>#logo{ /* define o preenchimento da imagem e seu tamanho */
+        padding-top: 30px;
+        max-width: 400px;
+    }
+
+    section{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #contato>ul{
+        padding: 0px;
+    }
 }
