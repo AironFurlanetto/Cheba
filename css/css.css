@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 header{ /*altera a parte visual da parte superior do site,cor de fundo, direção do flex, itens no centro, em coluna*/
     background-color: #3300CC;
     display: flex;
@@ -39,20 +43,12 @@ nav>ul{ /* muda a direção do nav para linha e adiciona um espaçamento entre o
     color: black;
 }
 
-/* article{
-    display: none;
-} */
-
 #inicial:target{
     display: block;
 }
 
 #servicos:target{
     display: block;
-}
-
-#contato:target{
-    
 }
 
 #contato{
@@ -81,6 +77,26 @@ p{  /* altera o tamanho da fonte */
 section{  /* margem do section  */
     margin-left: 5%;
     margin-right: 5%;
+    
+}
+
+.carrossel{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+button{
+    color: #3300CC;
+    background-color: white;
+    padding: 20px 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #3300CC;
+    color: white;
 }
 
 a{
@@ -92,8 +108,8 @@ a{
     text-decoration: none;
 }
 
-#inicial{
-    align-items: center;
+article{
+    text-align: center;
 }
 
 article>img { /*  */
@@ -127,7 +143,7 @@ footer>img{ /* altera o preenchimento(distancia até a borda),tamanho,altura */
 footer>p{
     font-size: 17px;
     display: flex;
-    text-align: start;
+    text-align: center;
     margin-left: 10px;
     margin-right: 10px;
     align-items: center;
@@ -177,13 +193,11 @@ footer>p{
         width: auto;
         font-size: 15px;
         padding: 10px;
-    
     }
 
     header>#logo{ /* define o preenchimento da imagem e seu tamanho */
         padding-top: 20px;
         max-width: 350px;
-        
     }
 
     #contato>ul{
@@ -198,15 +212,13 @@ footer>p{
         padding: 8px;
         align-items: start;
     }
-    
+
     footer{
         padding: 10px;
-       
     }
-    
+
     footer>p{
         font-size: 15px;
         
-        
-    }  
+    }
 }
