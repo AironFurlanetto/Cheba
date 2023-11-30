@@ -52,19 +52,6 @@ nav>ul {
     color: black;
 }
 
-#inicial:target {
-    /* define o display da parte inicial como fixo */
-    display: block;
-}
-
-#servicos:target {
-    display: block;
-}
-
-#contato {
-    display: block;
-}
-
 li {
     display: flex;
     justify-content: space-between;
@@ -94,7 +81,7 @@ section {
 
 .carrossel {
     display: flex;
-    width: 50%;
+    width: 70%;
     height: auto;
     padding-bottom: 15px;
     justify-content: center;
@@ -230,8 +217,7 @@ footer>p {
         display: block;
     }
     #contato>ul>li>a {
-        display: flex;
-        justify-content: start;
+        justify-content: center;
         padding: 8px;
     }
     #contato>ul>li>a>img {
