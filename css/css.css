@@ -231,7 +231,7 @@ footer>p {
     }
     #contato>ul>li>a {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         padding: 8px;
     }
     #contato>ul>li>a>img {
