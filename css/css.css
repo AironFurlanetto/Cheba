@@ -1,106 +1,120 @@
-html{
+html {
+    /* deixa uma animação de descida suave a pagina */
     scroll-behavior: smooth;
 }
 
-header{ /*altera a parte visual da parte superior do site,cor de fundo, direção do flex, itens no centro, em coluna*/
+header {
+    /*altera a parte visual da parte superior do site,cor de fundo, direção do flex, itens no centro, em coluna*/
     background-color: #3300CC;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-header a{ /*altera a cor das letras da area de navegação do header, preenchimento,margem*/
+header a {
+    /*altera a cor das letras da area de navegação do header, preenchimento,margem*/
     color: white;
     padding: 10px;
     margin: 0;
 }
 
-header>#servicosimg{ /* tamanho de imagem da imagem ao topo do header */
+header>#servicosimg {
+    /* tamanho de imagem da imagem ao topo do header */
     width: 100%;
 }
 
-header>#logo{ /* define o preenchimento da imagem e seu tamanho */
+header>#logo {
+    /* define o preenchimento da logo e seu tamanho */
     padding: 15px;
     width: 400px;
 }
 
-nav>ul{ /* muda a direção do nav para linha e adiciona um espaçamento entre os itens */
+nav>ul {
+    /* muda a direção do nav para linha e adiciona um espaçamento entre os itens */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0 10px;
 }
 
-#nav{ /* troca o fundo da nav para preto, retira sua margem, define a cor das letras para branco e altera a curvatura da borda da nav*/
+#nav {
+    /* troca o fundo da nav para preto, retira sua margem, define a cor das letras para branco */
     background-color: black;
     color: white;
     margin: 0px;
     border-radius: 5px;
+    /* altera a curvatura da borda da nav */
 }
 
-#nav:hover{ /* troca a cor das letras e do fundo ao passar o mouse sobre o nav */
+#nav:hover {
+    /* troca a cor das letras e do fundo ao passar o mouse sobre o nav */
     background-color: white;
     color: black;
 }
 
-#inicial:target{
+#inicial:target {
+    /* define o display da parte inicial como fixo */
     display: block;
 }
 
-#servicos:target{
+#servicos:target {
     display: block;
 }
 
-#contato{
+#contato {
     display: block;
 }
 
-li{
+li {
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
 }
 
-body{
+body {
     margin: 0;
 }
 
-h2{   /* centraliza o texto*/
+h2 {
+    /* centraliza o texto*/
     text-align: center;
 }
 
-p{  /* altera o tamanho da fonte */
+p {
+    /* altera o tamanho da fonte */
     font-size: 20px;
     text-align: justify;
 }
 
-section{  /* margem do section  */
+section {
+    /* margem do section  */
     margin-left: 5%;
     margin-right: 5%;
-    
 }
 
-.carrossel{
-    display: block;
-    width: 100%;
+.carrossel {
+    display: flex;
+    width: 50%;
     height: auto;
     padding-bottom: 15px;
+    justify-content: center;
+    margin: auto;
 }
 
-button{
+button {
     color: #3300CC;
     background-color: white;
-    padding: 20px 20%;
+    padding: 20px 13%;
     border: 1px solid black;
     border-radius: 10px;
 }
 
-button:hover{
+button:hover {
     background-color: #3300CC;
     color: white;
 }
 
-a{
+a {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -109,39 +123,45 @@ a{
     text-decoration: none;
 }
 
-article{
+article {
     text-align: center;
 }
 
-article>img { /*  */
+article>img {
+    /*  */
     width: 90%;
     height: auto;
 }
 
-li a{
+li a {
+    /* ve se da ai */
     display: flex;
     color: black;
     text-align: center;
 }
 
-a>img{ /* altera o tamanho da imagem que está nos contatos */
+a>img {
+    /* altera o tamanho da imagem que está nos contatos */
     width: 25px;
 }
 
-footer{  /*permite que os elementos sejam organizados automaticamente acordo com o tamanho da tela  */
+footer {
+    /*permite que os elementos sejam organizados automaticamente acordo com o tamanho da tela  */
     display: flex;
     justify-content: space-between;
     background-color: #3300CC;
     color: white;
 }
 
-footer>img{ /* altera o preenchimento(distancia até a borda),tamanho,altura */
+footer>img {
+    /* altera o preenchimento(distancia até a borda),tamanho,altura */
     padding: 10px;
     width: 250px;
     height: auto;
 }
 
-footer>p{
+footer>p {
+    /* troca o tamanho da fonte e ajusta o tamanho da margem das informações*/
     font-size: 17px;
     display: flex;
     text-align: center;
@@ -150,80 +170,77 @@ footer>p{
     align-items: center;
 }
 
-@media (max-width:1023px){ /* tamanho para tablet */
-    header>#logo{ /* define o preenchimento da imagem e seu tamanho */
+@media (max-width:1023px) {
+    /* tamanho para tablet */
+    header>#logo {
+        /* define o tamanho da logo */
         width: 450px;
     }
-    
-    #nav{
+    #nav {
         width: 95px;
         font-size: 18px;
         text-align: center;
-          
     }
-
-    a{
+    a {
         flex-direction: row;
         font-size: 15px;
         justify-content: space-evenly;
         text-align: center;
     }
-
-    #contato>ul{
+    #contato>ul {
         padding: 0;
     }
-    
-    footer{
+    footer {
         display: flex;
         flex-wrap: nowrap;
         font-size: 10px;
         padding: 0 2%;
     }
-
-    footer>img{ /* Tira a imagem do footer */
+    footer>img {
+        /* Tira a imagem do footer */
         display: none;
     }
 }
 
-@media (max-width: 670px){ /* tamanho para celular */
-    #servicosimg{
+@media (max-width: 670px) {
+    /* tamanho para celular */
+    #servicosimg {
         display: none;
     }
-    
-    #nav{
+    #nav {
         width: auto;
         font-size: 15px;
         padding: 10px;
     }
-
-    header>#logo{ /* define o preenchimento da imagem e seu tamanho */
+    header>#logo {
+        /* define o preenchimento da imagem e seu tamanho */
         padding-top: 20px;
         max-width: 350px;
     }
-
-    #contato>ul{
+    .carrossel {
+        width: 90%;
+    }
+    button {
+        padding: 20px 20%;
+    }
+    #contato>ul {
         padding: 0px;
     }
-
-    #contato>ul>li{
-        display:block;
+    #contato>ul>li {
+        display: block;
     }
-
-    #contato>ul>li>a{
+    #contato>ul>li>a {
         display: flex;
         justify-content: center;
         padding: 8px;
     }
-    #contato>ul>li>a>img{
+    #contato>ul>li>a>img {
         margin-right: 8px;
     }
-
-    footer{
+    footer {
         padding: 10px;
     }
-
-    footer>p{
+    footer>p {
         font-size: 15px;
-        
     }
 }
