@@ -84,6 +84,7 @@ section{  /* margem do section  */
     display: block;
     width: 100%;
     height: auto;
+    padding-bottom: 15px;
 }
 
 button{
@@ -209,8 +210,12 @@ footer>p{
     }
 
     #contato>ul>li>a{
+        display: flex;
+        justify-content: center;
         padding: 8px;
-        align-items: start;
+    }
+    #contato>ul>li>a>img{
+        margin-right: 8px;
     }
 
     footer{
